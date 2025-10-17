@@ -29,25 +29,13 @@ public class RuletaController {
     private static final double POINTER_HEIGHT = 74.0;
 
     private static final List<String> SECTIONS = List.of(
-            "Máscara Embrujada",
-            "Caldero Sombrío",
-            "Calabaza Dorada",
-            "Sombrero de Bruja",
-            "Poción Lunar",
-            "Esencia Espectral",
-            "Lamento del Bosque",
-            "Cofre de Sombras"
+            "TRUCO",
+            "TRATO"
     );
 
     private static final List<Color> SECTION_COLORS = List.of(
-            Color.web("#5b144b"),
-            Color.web("#872039"),
-            Color.web("#c04a36"),
-            Color.web("#d9623f"),
-            Color.web("#532c8a"),
-            Color.web("#7a3286"),
-            Color.web("#aa4471"),
-            Color.web("#ff6b4a")
+            Color.web("#A31B00"),
+            Color.web("#5E2400")
     );
 
     @FXML

@@ -4,7 +4,7 @@
 
 /* Título Halloween */
 .title-label {
-    -fx-text-fill: #ff0000;
+    -fx-text-fill: #621111;
     -fx-font-family: 'Impact', 'Arial Black', sans-serif;
     -fx-effect: dropshadow(gaussian, rgba(139, 0, 0, 0.9), 15, 0.8, 0, 0),
     dropshadow(gaussian, rgba(0, 0, 0, 0.95), 8, 0.9, 3, 3),
@@ -35,7 +35,7 @@
 }
 
 .text-field:focused {
-    -fx-border-color: #ff0000;
+    -fx-border-color: rgba(255, 0, 0, 0.53);
     -fx-border-width: 3px;
     -fx-background-color: rgba(30, 0, 0, 0.9);
     -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 0.8), 15, 0.8, 0, 0),
@@ -44,7 +44,7 @@
 }
 
 .text-field:hover {
-    -fx-border-color: #cc0000;
+    -fx-border-color: rgba(204, 0, 0, 0.55);
     -fx-effect: dropshadow(gaussian, rgba(204, 0, 0, 0.7), 12, 0.7, 0, 0);
 }
 
@@ -70,7 +70,7 @@
 }
 
 .combo-box:focused {
-    -fx-border-color: #ff0000;
+    -fx-border-color: rgba(255, 0, 0, 0.55);
     -fx-border-width: 3px;
 }
 
@@ -99,7 +99,7 @@
 .acceder-button {
     -fx-background-color: linear-gradient(to bottom, #8b0000 0%, #5a0000 100%);
     -fx-background-radius: 10px;
-    -fx-border-color: #ff0000;
+    -fx-border-color: rgba(255, 0, 0, 0.59);
     -fx-border-width: 2px;
     -fx-border-radius: 10px;
     -fx-text-fill: #ffffff;
@@ -112,12 +112,12 @@
 }
 
 .acceder-button:hover {
-    -fx-background-color: linear-gradient(to bottom, #cc0000 0%, #8b0000 100%);
+    -fx-background-color: linear-gradient(to bottom, rgba(204, 0, 0, 0.56) 0%, #8b0000 100%);
     -fx-border-color: #ff3333;
     -fx-border-width: 3px;
     -fx-scale-x: 1.05;
     -fx-scale-y: 1.05;
-    -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 0.9), 18, 0.9, 0, 0),
+    -fx-effect: dropshadow(gaussian, rgba(255, 0, 0, 0.34), 18, 0.9, 0, 0),
     innershadow(gaussian, rgba(255, 255, 255, 0.2), 5, 0.5, 0, 1);
 }
 
@@ -186,5 +186,5 @@
 
 /* Estilo para el ícono de error (opcional, para ajustar el tamaño) */
 .dialog-pane .graphic-container .icon {
-    -fx-icon-color: #ff0000; /* Rojo para el ícono de error */
+    -fx-icon-color: rgba(255, 0, 0, 0.48); /* Rojo para el ícono de error */
 }
