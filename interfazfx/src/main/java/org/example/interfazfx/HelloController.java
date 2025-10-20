@@ -62,25 +62,41 @@ public class HelloController {
 
     private void abrirRuleta() {
         try {
+            // Cargamos el FXML de la ruleta
             URL fxml = getClass().getResource("/org/example/interfazfx/ruleta-view.fxml");
-            if (fxml == null) throw new IllegalStateException("No se encontró ruleta.fxml");
+            if (fxml == null) throw new IllegalStateException("No se encontró ruleta-view.fxml");
 
             FXMLLoader loader = new FXMLLoader(fxml);
             Parent root = loader.load();
 
-            Scene scene = new Scene(root, 550, 402);
+            // Creamos la escena
+            Scene scene = new Scene(root);
 
-            // (Opcional) aplica tu CSS general
-            URL css = getClass().getResource("/org/example/interfazfx/ruleta-style.css");
-            if (css != null) scene.getStylesheets().add(css.toExternalForm());
-
+            // Creamos el nuevo Stage (ventana)
             Stage stage = new Stage();
             stage.setTitle("Ruleta de Halloween");
             stage.setScene(scene);
+
+            // ✅ Pantalla completa (sin barra ni bordes)
+            stage.setFullScreen(true);
+
+            // (Opcional) aplica el CSS si existe
+            URL css = getClass().getResource("/org/example/interfazfx/ruleta-style.css");
+            if (css != null) {
+                scene.getStylesheets().add(css.toExternalForm());
+            }
+
+            // Mostramos la nueva ventana
             stage.show();
+
+            // (Opcional) cerrar la ventana actual (login)
+            Stage currentStage = (Stage) accederButton.getScene().getWindow();
+            currentStage.close();
+
         } catch (Exception ex) {
             ex.printStackTrace();
             mostrarError("No se pudo abrir la ruleta.\n" + ex.getMessage());
         }
     }
+
 }

@@ -19,7 +19,7 @@ public class LoginHalloween extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(fxmlLocation);
 
         // Cargar la escena
-        Scene scene = new Scene(fxmlLoader.load(), 550, 402);
+        Scene scene = new Scene(fxmlLoader.load());
 
         // Cargar el archivo CSS principal
         URL cssLocation = getClass().getResource("/org/example/interfazfx/halloween-style.css");
